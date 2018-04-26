@@ -1,0 +1,29 @@
+body {
+  background-color: #eaeaea;
+  text-align: center;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+  color: #333;
+}
+a:visited{
+  color: #333;
+}
+a:active{
+  color: #cc3;
+}
+
+.cesuanItem{
+  float: left;
+  width: 33%;
+  text-align: center;
+  margin: -1px -1px 0 0;
+  border: 1px solid #ccc;
+}
+.cesuanItem:hover{
+  background-color: #f9c8a1;
+}
+
