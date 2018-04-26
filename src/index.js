@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import {Router, Route, useRouterHistory} from 'react-router';
 import {createHistory} from 'history';
 import {Hello} from './app/hello';
+import history from './wnl_history';
 
 import './index.scss';
 
@@ -10,6 +11,8 @@ import './index.scss';
 const appHistory = useRouterHistory(createHistory)({
   basename: '/numberology/summary/'
 });
+
+history.init();
 
 ReactDOM.render(
   <Router history={appHistory}>
