@@ -42,11 +42,11 @@ function getQueryValue(key) {
   return null;
 }
 function paramfunc(str) {
-  window[str] = getQueryValue(str) || getQueryValue(str.toUpperCase) || getQueryValue(str.toLowerCase) || window.localData[str];
+  window[str] = getQueryValue(str) || window.localData[str];
   let reg = (regName => '/' + window[regName] + '/i')(str);
   if (reg.indexOf(str) !== -1) {
     window[str] = '';
-  } else if (window[str] === 'null' || window[str] === null) {
+  } else if (window[str] === 'null' || window[str] === null || window[str] === undefined) {
     window[str] = '';
   }
 }
@@ -102,12 +102,16 @@ const wnlHistory = {
         };
         $.post(wxloginUrl, data).then((res) => {
           this.setParams(res.data.wnlUserId);
-        });
+        })
       }
     } else if (!browser.isWnl()) {
-      $.get(guidUrl).then((res) => {
-        this.setParams(res.toString());
-      });
+      if(window.location.hostname === '51wnl') {
+        $.get(guidUrl).then((res) => {
+          this.setParams(res.toString());
+        });
+      } else {
+        this.setParams(parseInt(Math.random()*1000000).toString(16) + '-' + parseInt(Math.random()*10000) + '-' + parseInt(Math.random()*10000) + '-' + parseInt(Math.random()*1000000).toString(16));
+      };
     }
   },
   setParams(str) {

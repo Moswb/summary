@@ -13,15 +13,14 @@ a:visited{
   color: #333;
 }
 a:active{
-  color: #cc3;
+  color: #333;
 }
 
 .cesuanItem{
   float: left;
-  width: 33%;
+  width: 27%;
+  margin: 0 3%;
   text-align: center;
-  margin: -1px -1px 0 0;
-  border: 1px solid #ccc;
   min-height: 121px;
 }
 .cesuanItem:hover{
