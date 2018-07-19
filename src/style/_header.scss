@@ -1,0 +1,30 @@
+.header {
+    width: 100%;
+    position: relative;
+    height: 500px;
+    position: relative;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    text-shadow: 0 1px 3px rgba(0,0,0,.4), 0 0 30px rgba(0,0,0,.075);
+    background: #000;
+    background: -webkit-gradient(to bottom,color-stop(0,#000),color-stop(100%,rgba(255,255,255, 0)));
+    background: -webkit-linear-gradient(180deg,#000 0,rgba(255,255,255, 0));
+    background: -o-linear-gradient(180deg,#000 0,rgba(255,255,255, 0));
+    background: linear-gradient(180deg,#000 0,rgba(255,255,255, 0));
+    &:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: url(/img/bg.png) repeat center center;
+        opacity: .4;
+    }
+    h1 {
+        font-size: 55px;
+    }
+}

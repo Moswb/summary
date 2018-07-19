@@ -1,73 +1,147 @@
 const cesuanArr = [{
-  name: '年度运势',
+  name: '今日一览（万年历内h5）',
+  url: 'https://mmp.51wnl.com/jryl/index.html?citycode=101040700&astro=aries&date=20180719&versioncode=4.7.4&from=singlemessage&isappinstalled=0',
+  desc: '多端适配',
+  Tech: '',
+  Time: '2017-05'
+}, {
+  name: '万年历统一订单',
+  url: 'http://coco70.51wnl.com/numberologynew/cs/index.html?userId=wx20170614101244863&nickname=%E9%99%88%E9%9B%A8%E6%9E%97&sex=1&province=%E9%87%8D%E5%BA%86&city=&country=%E4%B8%AD%E5%9B%BD&headimgurl=http://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIoNBGXbSPBnew8Jb4WQcUKVszRrA0Jgmo5HnEibxuz3OSib6u9eLrzMOXjtgsMFc6Uvldzurn3Gqxw/132&access_token=10_RJPK982eoGlY4jzTTM11_dZ2uskvAJS5NnN6iqQUi4YvW8eYMcdLxwUHBYKTRMS_g69gyPu2pJ_AybPRQH5Z0GEm9NlkBrjhzs0gRc9G9RE&openid=ograBt0PSPvTTTDVaDadApd5JvCE&unionid=ooYW_t38PYDpGhL2Fr_WUbpROat0',
+  desc: '万年历测算&商城统一订单页&我的订单入口',
+  Tech: '',
+  Time: '2017-05~多次迭代'
+}, {
+  name: '年度运势迭代',
   url: 'https://mobile.51wnl.com/numberology/ndys/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]&posId=[posId]',
-  loc: 'wnl_ndys',
-  from: 'chenyulin'
+  desc: '2017年下运势测算(已下线）',
+  Tech: 'router.js jquery',
+  Time: '2017-06'
+}, {
+  name: '塔罗事业运迭代',
+  url: 'https://mobile.51wnl.com/numberology/tlp/dist/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&boundid=[BUNDLE]&posId=[posId]',
+  desc: '占卜的简单测算项目',
+  Tech: 'jquery',
+  Time: '2017-06'
+}, {
+  name: '星座感情合盘迭代',
+  url: 'http://mobile.51wnl.com/numberology/xzhp/src/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&posId=[posId]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]',
+  desc: '测算项目',
+  Tech: 'jquery',
+  Time: '2017-06'
+}, {
+  name: 'h5版万年历',
+  url: 'https://mobile.51wnl.com/web/#/index/',
+  desc: '51万年历的h5版本',
+  Tech: 'vue',
+  Time: '2017-07'
+}, {
+  name: '万年历统一支付页',
+  url: 'http://order.51wnl.com/pay_web/index_t.html?money=9.9&source=%E6%B5%81%E6%9C%88%E8%BF%90%E5%8A%BF-7%E6%9C%88&parterid=Lunar&goodsid=128D9894D55F49E79D974383399E9140&parteruserid=5b11cf735634464699a98f2c986f4aef&data=00_C63759DEF2BB687E&posId=&openid=&couponId=&imei=&returnUrl=http%3A%2F%2Fmobile.51wnl.com%2Fnumberology%2Flyys%2Fresult.html%3FuserId%3D5b11cf735634464699a98f2c986f4aef%26deviceId%3D5b11cf735634464699a98f2c986f4aef%26posId%3D%26pushToken%3D%26mac%3D%26imei%3D%26pToken%3D%26idfa%3D%26boundId%3D%26clientType%3D%26sourceType%3Dother%26couponId%3D%26orderid%3D00_C63759DEF2BB687E%26code%3D00_541F785A74EDAA47%26orderid%3D00_C63759DEF2BB687E%26code%3D00_541F785A74EDAA47',
+  desc: '万年历测算&电商产品的支付环节页面',
+  Tech: 'hybird',
+  Time: '2017-08~多次迭代'
 }, {
   name: '流月运势',
   url: 'https://mobile.51wnl.com/numberology/lyys/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&posId=[posId]&boundId=[BUNDLE]',
-  loc: 'wnl_lyys',
-  from: 'chenyulin'
+  desc: '每月运势测算',
+  Tech: 'sass rem布局',
+  Time: '2017-08'
 }, {
   name: '八字合婚',
   url: 'http://mobile.51wnl.com/numberology/Tools/bzhh.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&posId=[posId]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]',
-  loc: 'wnl_jryc',
-  from: 'chenyulin'
+  desc: '合婚测算',
+  Tech: '',
+  Time: '2017-09'
 }, {
-  name: '塔罗事业运',
-  url: 'https://mobile.51wnl.com/numberology/tlp/dist/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&boundid=[BUNDLE]&posId=[posId]',
-  loc: 'wnl_tlp',
-  from: 'chenyulin'
+  name: '流月运势小程序',
+  url: 'http://mobile.51wnl.com/numberology/gylq/index.html',
+  desc: '万年历h5测算项目',
+  Tech: '小程序',
+  Time: '2017-10'
 }, {
-  name: '星座感情合盘',
-  url: 'http://mobile.51wnl.com/numberology/xzhp/src/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&posId=[posId]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]',
-  loc: 'wnl_xzhp',
-  from: 'chenyulin'
+  name: '万圣节活动',
+  url: 'http://mobile.51wnl.com/activity/halloween/#/result/1/1',
+  desc: 'h5',
+  Tech: '',
+  Time: '2017-10'
 }, {
-  name: '塔罗感情运',
-  url: 'https://mobile.51wnl.com/numberologynew/gqy/#/?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&boundid=[BUNDLE]&posId=[posId]&DONTURLENCODE=[DONTURLENCODE]',
-  loc: 'wnl_gqy',
-  from: 'liuyu'
+  name: '感恩节活动',
+  url: 'https://mobile.51wnl.com/activity/thanksgiving/index.html',
+  desc: 'h5',
+  Tech: '',
+  Time: '2017-11'
 }, {
-  name: '塔罗工作小工具',
-  url: 'https://mobile.51wnl.com/numberology/worktool/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&boundid=[BUNDLE]&posId=[posId]&DONTURLENCODE=[DONTURLENCODE]',
-  loc: 'wnl_xgj',
-  from: 'liuyu'
+  name: '万年历公众号内今日一览h5',
+  url: 'http://mobile.51wnl.com/wechat/jryl/app.html',
+  desc: 'h5',
+  Tech: '',
+  Time: '2017-12'
 }, {
-  name: '2018年度运势',
-  url: 'https://mobile.51wnl.com/numberology/2018ndys/#/?userID=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&PToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&boundid=[BUNDLE]&posId=[posId]&Idfa=[IDFA]&DONTURLENCODE=[DONTURLENCODE]',
-  loc: 'wnl_2018ndys',
-  from: 'liuyu'
+  name: '新春携程抢票日历活动',
+  url: 'http://mobile.51wnl.com/activity/newyear/news.html',
+  desc: 'hibird（= =没做容灾）',
+  Tech: 'jquery',
+  Time: ''
 }, {
-  name: '星盘另一半',
-  url: 'https://mobile.51wnl.com/numberology/wnl_xplyb/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]&posId=[posId]',
-  loc: 'wnl_xplyb',
-  from: 'kuangpengfei'
+  name: '观音灵签App-H5',
+  url: '',
+  desc: '',
+  Tech: 'es6',
+  Time: '2017-12'
 }, {
-  name: '星盘子女运',
-  url: 'https://mobile.51wnl.com/numberology/zny/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]&posId=[POSID]',
-  loc: 'wnl_zny',
-  from: 'kuangpengfei'
+  name: '观音灵签h5',
+  url: 'http://mobile.51wnl.com/numberology/gylq/index.html',
+  desc: '万年历h5测算项目',
+  Tech: 'es6',
+  Time: '2017-12'
 }, {
-  name: '八字测算',
-  url: 'https://mobile.51wnl.com/numberology/bzcs/bzcs_index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&boundId=[BUNDLE]&pushToken=[PTOKEN]&pToken=[PTOKEN]&posId=[POSID]',
-  loc: 'bzcs',
-  from: 'kuangpengfei'
+  name: '新春猜灯谜小程序',
+  url: 'http://mobile.51wnl.com/numberology/gylq/index.html',
+  desc: '万年历h5测算项目',
+  Tech: '小程序',
+  Time: '2018-01'
 }, {
-  name: '星盘前世今生',
-  url: 'https://mobile.51wnl.com/numberology/qsjs/index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&idfa=[IDFA]&channel=[CHANNEL]&posId=[posId]&boundId=[BUNDLE]',
-  loc: 'wnl_qsjs',
-  from: 'kuangpengfei'
+  name: '万年历彩票列表页',
+  url: 'http://mobile.51wnl.com/lottery/index.html',
+  desc: 'hibird',
+  Tech: 'es6',
+  Time: '2018-03'
 }, {
-  name: '星盘合盘',
-  url: 'https://mobile.51wnl.com/numberology/xphp/index.html',
-  loc: 'wnl_xphp',
-  from: 'kuangpengfei'
+  name: '万年历Web版本',
+  url: 'http://www.51wnl.com/webcalandar/index.html',
+  desc: '',
+  Tech: 'es6',
+  Time: '2018-04'
 }, {
-  name: '择吉日',
-  url: 'https://coco70.youloft.cn/mingli/zj_index.html?userId=[WNLUSERID]&deviceId=[OPENUDID]&pushToken=[PTOKEN]&pToken=[PTOKEN]&mac=[MAC]&imei=[IMEI]&boundid=[BUNDLE]&posId=[posId]&DONTURLENCODE=[DONTURLENCODE]',
-  loc: 'mingLi',
-  from: 'yechuanjie'
+  name: '观音灵签快应用',
+  url: 'http://mobile.51wnl.com/activity/fifa2018/index.html',
+  desc: '快应用',
+  Tech: 'es6',
+  Time: '2018-05'
+}, {
+  name: '万年历常规测试模板',
+  url: 'http://mobile.51wnl.com/activity/nameCheck/index.html?testId=15',
+  desc: '测试模板',
+  Tech: 'react flex布局',
+  Time: '2018-05'
+}, {
+  name: '世界杯日历',
+  url: 'http://mobile.51wnl.com/activity/fifa2018/index.html',
+  desc: '后台已下线 嗯= =还是应该做个容灾处理',
+  Tech: 'es6',
+  Time: '2018-06'
+}, {
+  name: '马戏跳跃小游戏',
+  url: '',
+  desc: '小游戏',
+  Tech: 'cocos-creator',
+  Time: '2018-07'
+}, {
+  name: '其他',
+  url: '',
+  desc: '新春大礼包测算，迎财神活动，黄历工具集...',
+  Tech: '',
+  Time: ''
 }];
 
 export default cesuanArr;
