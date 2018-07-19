@@ -10,6 +10,7 @@ export class Hello extends Component {
           <h3>{cesuan.name}</h3>
           <p>{cesuan.desc}</p>
           <p>{cesuan.Tech} @{cesuan.Time}</p>
+          <i className="light"/>
         </div>
       );
     });
